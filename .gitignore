@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data & outputs (keep large binaries local; document expected filenames in README)
+*.parquet
+*.csv
+*.dta
+*.xlsx
+*.pkl
+*.h5
+
+# Logs
+*.log
