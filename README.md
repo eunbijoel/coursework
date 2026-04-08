@@ -1,6 +1,6 @@
 # Coursework archive
 
-**Eunbi Cho** · `[@eunbijoel](https://github.com/eunbijoel)` · [Repository on GitHub](https://github.com/eunbijoel/coursework)
+**Eunbi Cho** · `[@eunbijoel](https://github.com/eunbijoel)` 
 
 Personal repository of **undergraduate and graduate coursework** (notebooks, assignments, small projects), grouped by stage and topic. This is a **portfolio / archive**: not all paths are one-click reproducible without local data and path fixes.
 
