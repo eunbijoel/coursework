@@ -21,11 +21,13 @@ Hybe_finance analysis.ipynb
 
 ## What to modify for which purpose
 
-| Goal | Where | Risk |
-|------|-------|------|
-| New target variable | Feature definition cells | Leakage if future info included |
-| Different model list | Model definition / training loop | Metric comparison validity |
-| Faster iteration | Subsample data | Conclusions may not generalize |
+
+| Goal                 | Where                            | Risk                            |
+| -------------------- | -------------------------------- | ------------------------------- |
+| New target variable  | Feature definition cells         | Leakage if future info included |
+| Different model list | Model definition / training loop | Metric comparison validity      |
+| Faster iteration     | Subsample data                   | Conclusions may not generalize  |
+
 
 ## Dependencies observed in imports
 

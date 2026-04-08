@@ -6,9 +6,11 @@ Individual project for **BTM50039 — AI for Business Management** (course metad
 
 ## File
 
-| File | Role |
-|------|------|
+
+| File                          | Role                                                                                                                                      |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `Hybe_finance analysis.ipynb` | End-to-end notebook: Colab drive mount to `.../KAIST/25_01/인공지능`, heavy stack of imports, data prep, modeling, SHAP, clustering sections. |
+
 
 ## Execution flow (high level)
 
@@ -40,3 +42,4 @@ Notebook paths point to the author’s Google Drive. **Identify `read_csv` / `re
 
 - Split into `notebooks/01_eda.ipynb`, `02_regression.ipynb`, etc., once stable.
 - Save key SHAP plots to `outputs/` with deterministic seeds documented.
+
