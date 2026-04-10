@@ -183,9 +183,69 @@ algorithms/
 - **평면 위 점들**의 **볼록 껍질(convex hull)** 을 **분할 정복**으로 구합니다.
 - 점 생성 조건: **서로 다른 x**, **서로 다른 y**, **일직선상 세 점 없음(비공선)** 등으로 과제 조건을 맞춥니다.
 
-### 흐름 (노트북 구조)
+### 전체 흐름
 
-1. **Divide:** x 좌표로 정렬한 뒤 **반평면으로 분할** (`separate_half_planes` 등).
-2. **Conquer:** 각 쪽에서 **작은 볼록 껍질** 생성 (`generate_convex_hull`, 방향 판별 등).
-3. **Merge:** 두 볼록 껍질을 **상·하 접선** 아이디어로 합치는 단계 (`upper_lower` 등).
-4. 결과를 **matplotlib**으로 표시.
+```mermaid
+flowchart LR
+  subgraph divide [① Divide]
+    A[점 n개] --> B[x 기준 정렬]
+    B --> C[앞 절반 / 뒤 절반]
+  end
+  subgraph conquer [② Conquer]
+    C --> D[hull1 = generate_convex_hull 왼쪽]
+    C --> E[hull2 = generate_convex_hull 오른쪽]
+  end
+  subgraph merge [③ Merge]
+    D --> F[upper_lower → 상·하 접선]
+    E --> F
+    F --> G[merge_half_hulls → 닫힌 다각형]
+  end
+```
+
+| 단계 | 함수 | 한 줄 |
+|------|------|--------|
+| Divide | `separate_half_planes` | 정렬 후 **인덱스 반으로** 자름 (지도 위 “반평면”이 아님) |
+| Conquer | `generate_convex_hull` | 각 묶음마다 **껍질 따라 한 바퀴** (Jarvis / Gift wrapping 스타일) |
+| Merge | `upper_lower` + `merge_half_hulls` | 좌·우 **다리(bridge)** 찾아 경계 이어 붙임 |
+
+---
+
+### Divide — `separate_half_planes`
+
+| 입력 | 출력 |
+|------|------|
+| `points` | `points_sorted` 후 `[:mid]`, `[mid:]` (`mid = len//2`) |
+
+---
+
+### Conquer — `generate_convex_hull`
+
+**직관:** 왼쪽 아래 근처에서 시작 → **반시계로 가장 잘 도는** 다음 꼭짓점만 골라 한 바퀴.
+
+| | |
+|--|--|
+| `get_orientation(o, p1, p2)` | 외적 부호. `> 0` 이면 `p2` 가 `p1` 보다 **더 반시계** → 후보 갱신 |
+| 루프 | `start` 잡기 → `far_point` 갱신하며 이동 → 다시 `start` 나올 때까지 |
+| 이 노트북에서 | **half만** 넣으면 → `hull_half_plane1`, `hull_half_plane2` (부분집합 껍질) |
+
+---
+
+### Merge — `upper_lower` · `merge_half_hulls`
+
+**직관:** 왼쪽 볼록 다각형과 오른쪽 볼록 다각형 사이에 **위 다리·아래 다리**를 정하고, 그 사이를 따라 한 루프로 이음.
+
+```
+      hull1                    hull2
+        ●────────────────────────●   ← upper bridge (상 접선)
+       /                          \
+      ●                            ●
+       \                          /
+        ●────────────────────────●   ← lower bridge (하 접선)
+```
+
+| 함수 | 역할 |
+|------|------|
+| `upper_lower` | `x_separator` = (왼쪽 최대 x + 오른쪽 최소 x)/2. 쌍별 직선·교차로 **상·하 극값** `(upper_bound, lower_bound)` (교육용 브루트포스) |
+| `merge_half_hulls` | 그 꼭짓점들의 **인덱스**를 찾아 한쪽 경계를 따라 건너뛰며 `merged_hull` 리스트 구성 (`% len` 순환) |
+
+---
