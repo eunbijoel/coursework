@@ -8,8 +8,8 @@
 | # | 주제 | 이동 |
 |---|------|------|
 | 1 | **Genetic algorithm** | [이동](Genetic%20Algorithm) |
-| 2 | **Graph algorithm** (Dijkstra 등) | [아래 §2](#2-graph-algorithm-그래프--다익스트라) |
-| 3 | **Divide and conquer** | [아래 §3](#3-divide-and-conquer-분할-정복) |
+| 2 | **Graph algorithm** (Dijkstra 등) | [이동](#2-graph-algorithm-그래프--다익스트라) |
+| 3 | **Divide and conquer** | [이동](#3-divide-and-conquer-분할-정복) |
 
 
 ---
@@ -30,8 +30,6 @@ algorithms/
 ---
 
 ## 2. Graph algorithm (그래프 · 다익스트라)
-
-**파일:** [`Graph Algorithm.ipynb`](Graph%20Algorithm.ipynb)
 
 ### 무엇을 하나요?
 
