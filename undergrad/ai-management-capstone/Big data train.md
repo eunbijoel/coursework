@@ -1,8 +1,4 @@
-# Exploratory Data Analysis 
-### - StudentID: 22000724
-### - Name: Eunbi Cho
-### - 1st Major: Management
-### - 2nd Major: AI Convergence
+# Exploratory Data Analysis
 
 
 *The proposed project is to analyze Dallas’ crime dataset using exploratory data analysis (EDA) techniques using Python programming. The project involves performing a variety of EDA tasks on the dataset, including data cleaning, univariate analysis, and multivariate analysis. The goal of the project is to propose the potential project idea based on the the insights obtained from the patterns and trends in the crime data.*
