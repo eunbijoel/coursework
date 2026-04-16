@@ -21,6 +21,8 @@ Thumbs.db
 # Data & outputs (keep large binaries local; document expected filenames in README)
 *.parquet
 *.csv
+# Small committed samples (exceptions must come after *.csv)
+!grad/RA_data/Cursor/samples/*.csv
 *.dta
 *.xlsx
 *.pkl
