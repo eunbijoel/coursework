@@ -10,8 +10,8 @@
 
 | 폴더                   | 설명                       |
 | -------------------- | ------------------------ |
-| `[Past/](Past/)`     | RA 당시 OG **파일** 보관       |
-| `[Cursor/](Cursor/)` | Cursor로 **개선·재작성**한 스크립트 |
+| [Past](https://github.com/eunbijoel/coursework/tree/main/grad/RA_data/Past)    | RA 당시 OG **파일** 보관       |
+| [Cursor](https://github.com/eunbijoel/coursework/tree/main/grad/RA_data/Cursor) | Cursor로 **재작성**한 스크립트 |
 
 
 ---
