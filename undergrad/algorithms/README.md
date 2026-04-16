@@ -1,6 +1,4 @@
-# 알고리즘 과제 (Undergraduate Algorithms)
-
-이 폴더는 **알고리즘** 강의 정리 파일입니다.
+# 알고리즘 과제 (Undergraduate Algorithm)
 ---
 
 ## 목차
@@ -173,7 +171,7 @@ algorithms/
 - `graph`: 전체 간선을 **검은 점선**으로 표시.
 - `path`: 최단 경로 간선만 **빨간 실선**.
 - `bad`: **빨간 사각형** 패치로 “나쁜 기상” 영역 표시.
----
+
 ---
 
 ## 3. Divide and conquer (분할 정복)
