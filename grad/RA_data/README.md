@@ -27,24 +27,6 @@
 | [News](Cursor/news_unibook_metadata.py)                   | **데이터:** 유니북 **URL**에서 서지 6필드(주기사명·서명·권호·발행처·발행일자·페이지) **한 행 CSV**.                                                                                                        | **Cursor:** `[news_unibook_metadata.py](Past/News.ipynb)`                                    |
 
 
-### Cursor 스크립트 실행 예시
-
-```text
-pip install -r Cursor/requirements.txt
-
-# FRUS HTML (기존)
-py -3 Cursor/frus_crawl.py --max-documents 20
-
-# FRUS GitHub XML → CSV (볼륨 목록은 이름순이라 첫 파일이 비어 있을 수 있음 → 확실히 하려면 --files 지정)
-py -3 Cursor/frus_xml_to_csv.py --files frus1861.xml --max-docs 500
-
-# 저자 소속 보강 (OpenAlex; --mailto 본인 이메일로 변경 권장)
-py -3 Cursor/author_affiliation_enrich.py --input Cursor/samples/authors_sample.csv --limit-rows 2 --mailto mailto:you@kaist.ac.kr
-
-# 유니북 URL 한 건
-py -3 Cursor/news_unibook_metadata.py --url "https://unibook.unikorea.go.kr/material/view?..."
-```
-
 ---
 
 ## Cursor 활용 인사이트
