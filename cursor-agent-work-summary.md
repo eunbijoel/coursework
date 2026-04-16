@@ -107,6 +107,5 @@
 
 ## 5. 추가: Open Claw 활용법
 
--  `[docs/open-claw.md](https://github.com/eunbijoel/coursework/blob/main/docs/open-claw.md)` 같은 파일을 만들어 링크를 이 자리에 넣으면 됨.  
+- `[docs/open-claw.md](https://github.com/eunbijoel/coursework/blob/main/docs/open-claw.md)` 같은 파일을 만들어 링크를 이 자리에 넣으면 됨.  
 - **(초안)** 제목만 두고 본인이 채워 넣을 수 있게 비워 둠.
-
