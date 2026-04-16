@@ -1,12 +1,18 @@
-# NLP (graduate) — placeholder
+# NLP project
+Paper work using NLP on social-humanity related dataset
 
-Reserved for **NLP coursework, experiments, or research code** you plan to version here.
 
-## Suggested next steps
+## Layout
 
-- Add `notebooks/` for exploratory work and `src/` for reusable preprocessing or model wrappers.
-- When first artifact lands, add `PROJECT_STRUCTURE.md` using the same template as sibling folders.
-
-## Status
-
-No notebooks or source files are committed in this folder yet (as of last documentation pass).
+```text
+Format
+├── Weverse
+│   ├── Data collection
+│   ├── LDA
+│   ├── Bert Topic Modeling
+├── Youtube
+│   ├── Data collection
+│   ├── LDA
+│   ├── Bert Topic Modeling
+└── Word Cloud
+```
