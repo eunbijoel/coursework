@@ -10,9 +10,9 @@ Repo of **undergraduate + graduate** works for an archiving purpose.
 
 ## Subfolders
 
-- **학부:** algorithm, ML, finance data, AI×management capstone
-- **석사:** NLP porject, RA **데이터 수집·정리** 작업
-- 각 폴더 별 자세한 `README.md` 참고
+- **Undergraduate:** algorithm, ML, finance data, AI×management capstone
+- **Graduate:** NLP project, RA **data collection · cleaning** work
+- See each folder’s `README.md` for details
 
 ---
 
@@ -21,10 +21,10 @@ Repo of **undergraduate + graduate** works for an archiving purpose.
 ```text
 coursework/
 ├── README.md                      # This file (overview only)
-├── cursor-agent-work-summary.md   # Cursor 활용 정리리
-├── OPENCLAW_GETTING_STARTED_KO.md             # 추가 과제
+├── cursor-agent-work-summary.md   # Notes on using Cursor
+├── OPENCLAW_GETTING_STARTED_KO.md             # Extra assignment
 ├── undergrad/
-│   ├── ai-management-capstone/    # AI × management (Indie Music/ Platform / acoustic features 등)
+│   ├── ai-management-capstone/    # AI × management (Indie Music/ Platform / acoustic features, etc.)
 │   ├── algorithms/              # GA, graphs, DAC, flight path
 │   ├── machine-learning/          # Gradient descent, K-means
 │   └── financial-data-analysis/   # Stock data, factor analysis, portfolio
