@@ -8,8 +8,9 @@
 
 | File | 내용 |
 |------|------|
-| `Task1.ipynb` | **Task 1:** 1차원 함수 최적화 GA  |
-| `Task 2.ipynb` | **Task 2:** TSP + GA  |
+| `task1.ipynb` | **Task 1:** 1차원 함수 최적화 GA  |
+| `task2.ipynb` | **Task 2:** TSP + GA  |
+| `team/` | 팀 제출본 (`Team1_Task1.ipynb`, `Team1_Task2.ipynb`, `Team_1.pdf`) |
 
 ---
 
@@ -156,7 +157,7 @@ fx 정의
 
 | 항목  | 내용                                                                         |
 | --- | -------------------------------------------------------------------------- |
-| 노트북 | `Task 2.ipynb`                                                       |
+| 노트북 | `task2.ipynb`                                                       |
 | 문제  | 도시(배송 지점)들을 **한 번씩** 돌아 **총 이동 거리**를 줄이는 경로 찾기                             |
 | 데이터 | 미국 도시 배송 좌표 CSV (`Atlanta` / `Cincinnati` / `Philadelphia` 등, 노트북에서 하나 선택) |
 | 비교  | **탐욕(nearest-neighbor) 경로** + **GA 경로**                                    |

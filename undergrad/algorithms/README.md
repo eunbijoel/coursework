@@ -5,9 +5,9 @@
 
 | # | 주제 | 이동 |
 |---|------|------|
-| 1 | **Genetic algorithm** | [이동](Genetic%20Algorithm) |
-| 2 | **Graph algorithm** (Dijkstra 등) | [이동](#2-graph-algorithm-그래프--다익스트라) |
-| 3 | **Divide and conquer** | [이동](#3-divide-and-conquer-분할-정복) |
+| 1 | **Genetic algorithm** | [이동](genetic-algorithm/) |
+| 2 | **Graph algorithm** (Dijkstra · 항공 경로) | [이동](flight-path/) |
+| 3 | **Divide and conquer** (볼록 껍질) | [이동](divide-and-conquer/) |
 
 
 ---
@@ -17,12 +17,9 @@
 ```text
 algorithms/
 ├── README.md                 ← 이 파일 (전체 안내)
-├── Divide and Conquer.ipynb  분할 정복 볼록 껍질
-├── Graph Algorithm.ipynb     가중 그래프 + Dijkstra + 시나리오 시각화
-└── Genetic Algorithm/
-    ├── README.md             Task 1 (연속 함수 GA)
-    ├── Task1.ipynb
-    └── Task 2.ipynb
+├── genetic-algorithm/        유전 알고리즘 (Task 1·2, 팀 제출본은 team/)
+├── flight-path/              가중 그래프 + Dijkstra + 항공 경로 시각화
+└── divide-and-conquer/       분할 정복 볼록 껍질 (노트북 · 스크립트 · 설명)
 ```
 
 ---
