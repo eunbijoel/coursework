@@ -32,9 +32,9 @@
 
 | 주제                                                                                                                             | 설명                                     | Cursor 구현                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------ |
-| [Genetic algorithm](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/Genetic%20Algorithm/README.md)      | 유전 알고리즘 과제, 연속 함수 최적화·TSP 등 개요와 실행 방법. | README 정리. **에이전트로 알고리즘 구조화 및 문서화.**                         |
-| [Graph algorithm (Dijkstra)](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/README-Graph-Algorithm.md) | 가중 그래프·최단 경로·기상 구역 시나리오 요약.            | **단일 파이프라인**으로 재구성 및 결과 시각화. 항공 경로 최단 경로 시각화 항공 경로 최단 경로 시각화 |
-| [Divide & Conquer algorithm](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/DAC_cursor%20refined.md)   | 분할 정복으로 Shell 연결하는 과제 구현.              | **코드 복잡도 및 시간 단축.** **알고리즘 구조화.** DAC 볼록 껍질 파이프라인 과정 시각화     |
+| [Genetic algorithm](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/genetic-algorithm/README.md)      | 유전 알고리즘 과제, 연속 함수 최적화·TSP 등 개요와 실행 방법. | README 정리. **에이전트로 알고리즘 구조화 및 문서화.**                         |
+| [Graph algorithm (Dijkstra)](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/flight-path/README.md) | 가중 그래프·최단 경로·기상 구역 시나리오 요약.            | **단일 파이프라인**으로 재구성 및 결과 시각화. 항공 경로 최단 경로 시각화 항공 경로 최단 경로 시각화 |
+| [Divide & Conquer algorithm](https://github.com/eunbijoel/coursework/blob/main/undergrad/algorithms/divide-and-conquer/DAC_cursor_refined.md)   | 분할 정복으로 Shell 연결하는 과제 구현.              | **코드 복잡도 및 시간 단축.** **알고리즘 구조화.** DAC 볼록 껍질 파이프라인 과정 시각화     |
 
 
 ---
@@ -89,9 +89,8 @@
 
 ## 5. 추가 업무
 
-- [open-claw.md](https://github.com/eunbijoel/coursework/blob/main/OPENCLAW_GETTING_STARTED_KO.md) 초안 작성
+- [open-claw.md](https://github.com/eunbijoel/coursework/blob/main/docs/OPENCLAW_GETTING_STARTED_KO.md) 초안 작성
 - EMG 소프트로봇 동향보고서 (04.09~10)
 - EDC PPT 수정
 - SQL to Python (FewShot-> RAG 학습)
 - Catena_X 구현 방안 탐색
-
