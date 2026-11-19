@@ -20,12 +20,16 @@ Repo of **undergraduate + graduate** works for an archiving purpose.
 
 ```text
 coursework/
-├── README.md                      # This file (overview only)
-├── cursor-agent-work-summary.md   # Cursor 활용 정리리
-├── OPENCLAW_GETTING_STARTED_KO.md             # 추가 과제
+├── README.md
+├── docs/
+│   ├── cursor-agent-work-summary.md   # Cursor 활용 정리
+│   └── OPENCLAW_GETTING_STARTED_KO.md # 추가 과제
 ├── undergrad/
-│   ├── ai-management-capstone/    # AI × management (Indie Music/ Platform / acoustic features 등)
-│   ├── algorithms/              # GA, graphs, DAC, flight path
+│   ├── ai-management-capstone/    # AI × management (Indie Music / Platform / acoustic features 등)
+│   ├── algorithms/
+│   │   ├── genetic-algorithm/     # GA (Task 1·2, team/)
+│   │   ├── flight-path/           # Graph + Dijkstra, 항공 경로
+│   │   └── divide-and-conquer/    # DAC convex hull
 │   ├── machine-learning/          # Gradient descent, K-means
 │   └── financial-data-analysis/   # Stock data, factor analysis, portfolio
 └── grad/
